@@ -1,0 +1,33 @@
+{
+  "name": "azure-functions-azuredb-executer",
+  "version": "0.0.2",
+  "description": "Small project to avoid boiler plate when creating Azure Functions that execute jobs in Azure Sql Databases",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thluiz/azure-functions-azuredb-executer.git"
+  },
+  "keywords": [
+    "azure",
+    "functions",
+    "node",
+    "javascript",
+    "azure-sql"
+  ],
+  "author": "Thiago Luiz Silva - Moy Chi Yau Si",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thluiz/azure-functions-azuredb-executer/issues"
+  },
+  "homepage": "https://github.com/thluiz/azure-functions-azuredb-executer#readme",
+  "dependencies": {
+    "tedious": "^2.6.4"
+  },
+  "devDependencies": {
+    "@types/tedious": "^2.6.1",
+    "dotenv": "^6.0.0"
+  }
+}
