@@ -1,10 +1,10 @@
 {
   "name": "azure-functions-azuredb-executer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Small project to avoid boiler plate when creating Azure Functions that execute jobs in Azure Sql Databases",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "node test"
   },
   "repository": {
     "type": "git",

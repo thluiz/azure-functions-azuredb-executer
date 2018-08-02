@@ -11,7 +11,8 @@ export interface IAzureDatabaseConnectionProperties {
     db_address: string,
     db_user: string,
     db_password: string,
-    db_name: string
+    db_name: string,
+    db_request_timeout?: number
 }
 
 /**
@@ -74,7 +75,8 @@ function getConnection(context, connection: IAzureDatabaseConnectionProperties, 
         server: connection.db_address,
         options: {
           database: connection.db_name,
-          encrypt: true
+          encrypt: true,
+          requestTimeout: connection.db_request_timeout || 15000,
         }
       };
 

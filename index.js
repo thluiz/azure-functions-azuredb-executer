@@ -54,7 +54,8 @@ function getConnection(context, connection, exec) {
         server: connection.db_address,
         options: {
             database: connection.db_name,
-            encrypt: true
+            encrypt: true,
+            requestTimeout: connection.db_request_timeout || 15000,
         }
     };
     var conn = new Connection(config);
